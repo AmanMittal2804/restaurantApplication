@@ -12,5 +12,5 @@ func OrderItemRoutes(incomingRoutes *gin.Engine) {
 	// to get all the items from the order id
 	incomingRoutes.GET("/orderItems-order/:order_id", controller.GetOrderItemsByOrder())
 	incomingRoutes.POST("/orderItems", controller.CreateOrderItems())
-	incomingRoutes.POST("/orderItems/:orderItem_id", controller.UpdateOrderItems())
+	incomingRoutes.POST("/orderItems/:orderItem_id", controller.UpdateOrderItem())
 }
